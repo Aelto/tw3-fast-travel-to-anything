@@ -7,7 +7,7 @@ function FTTA_getPinPosition(manager: CCommonMapManager, pin_tag: name): Vector 
 
   for (i = 0; i < pins.Size(); i += 1) {
     // skip normal FT pins, let the vanilla game do the job:
-    if (pin.type == 'RoadSign' || pin.type == 'Harbor') {
+    if (pins[i].type == 'RoadSign' || pins[i].type == 'Harbor') {
       continue;
     }
 
